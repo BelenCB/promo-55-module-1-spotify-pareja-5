@@ -1,0 +1,14 @@
+.top-page {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding:30px
+}
+
+.logo {
+    width: 200px;
+}
+
+.menu {
+    width: 50px;
+}
