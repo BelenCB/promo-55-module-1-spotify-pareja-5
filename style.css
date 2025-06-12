@@ -24,20 +24,24 @@ header {
 .premium {
     color: white;
     background-color:#529CF1;
-    padding-top: 70px;
+    padding-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 25px;
+    height: 50vh;
+}
+
+h1 {
+    font-size:50px;
 }
 
 h2 {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 .terms {
-    font-size: 9px;
-    margin-top: 25px;
+    font-size: 12px;
+    margin-top: 30px;
 }
 
 button {
@@ -59,5 +63,60 @@ font-size: 25px;
 }
 .benefit-1 {
     display:flex;
-    justify-content: center;
+    margin: 40px;
+    gap: 40px;
 }
+
+.benefit-2 {
+    display:flex;
+    margin: 40px;
+    gap: 40px;
+}
+
+.benefit-3 {
+    display:flex;
+    margin: 40px;
+    gap: 40px;
+}
+
+.benefit-4 {
+    display:flex;
+    margin: 40px;
+    gap: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag {
+    width: 25px;
+}
+
+.links-footer {
+    align-self: flex-end;
+}
+
+.legal {
+    margin-bottom: 20px;
+}
+
+.cookies {
+    margin-left: 20px;
+}
+
+.copy {
+    align-self: flex-start;
+}
+
+.spain {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
