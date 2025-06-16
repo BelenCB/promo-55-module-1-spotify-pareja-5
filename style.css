@@ -68,31 +68,25 @@ font-size: 25px;
 }
 
 .icons {
-    width: 100%;
+    width: 100px;
     }
 
-.benefit-1 {
-    display:flex;
-    margin: 40px;
-    gap: 40px;
+.benefits-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 40px;
 }
 
-.benefit-2 {
-    display:flex;
-    margin: 40px;
-    gap: 40px;
+.icon-container {
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
-.benefit-3 {
-    display:flex;
-    margin: 40px;
-    gap: 40px;
-}
-
-.benefit-4 {
-    display:flex;
-    margin: 40px;
-    gap: 40px;
+.benefit-text--1, .benefit-text--2, .benefit-text--3, .benefit-text--4 {
+    margin-top: 40px;
+    margin-right: 40px;
+    grid-column: 2 / 4;
 }
 
 footer {
@@ -159,16 +153,28 @@ footer {
     }
 
     .benefits-container {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    } 
+
+    .benefit-text--1 {
+        grid-column: 2 / 4;
     }
-    
-    .benefit-1,
-    .benefit-2,
-    .benefit-3,
-    .benefit-4{
-        flex:1
-    }   
+
+    .benefit-text--2 {
+        grid-column: 5 / 7;
+    }
+
+    .benefit-text--3 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .benefit-text--4 {
+        grid-column: 5 / 7;
+        grid-row: 2 / 3;
+    }
 
      .links-footer {
         align-content: flex-start;
@@ -178,6 +184,38 @@ footer {
 
 @media screen and (min-width:1024px) {
     .benefits-container {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+        text-align: center;
+    }
+
+    .icon-container {
+        margin-right: 60px;
+    }
+
+    .benefit-text--1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-top: 1px;
+    }
+
+    .benefit-text--2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-top: 1px;
+    }
+
+    .benefit-text--3 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        margin-top: 1px;
+    }
+
+    .benefit-text--4 {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        margin-top: 1px;
     }
 }
